@@ -1,4 +1,4 @@
-package desadio.capgemini.model;
+package desafio.capgemini.model;
 
 import java.io.File;
 import java.io.FileWriter;

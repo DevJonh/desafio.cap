@@ -10,8 +10,8 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 
-import desadio.capgemini.model.Anuncios;
 import desafio.capgemini.conexao.SingleConnection;
+import desafio.capgemini.model.Anuncios;
 
 public class AnunciosDao {
 

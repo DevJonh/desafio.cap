@@ -5,9 +5,9 @@ import java.text.ParseException;
 
 import org.junit.Test;
 
-import desadio.capgemini.model.Anuncios;
 import desafio.capgemini.Calculadora;
 import desafio.capgemini.dao.AnunciosDao;
+import desafio.capgemini.model.Anuncios;
 
 public class TestCalculadora {
 

@@ -8,7 +8,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import desadio.capgemini.model.Anuncios;
+
+import desafio.capgemini.model.Anuncios;
 
 @SuppressWarnings("serial")
 public class Layout extends JFrame {

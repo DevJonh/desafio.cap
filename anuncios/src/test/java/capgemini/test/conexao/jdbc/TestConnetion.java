@@ -6,9 +6,10 @@ import java.time.LocalDate;
 import java.util.List;
 
 import org.junit.Test;
-import desadio.capgemini.model.Anuncios;
+
 import desafio.capgemini.conexao.SingleConnection;
 import desafio.capgemini.dao.AnunciosDao;
+import desafio.capgemini.model.Anuncios;
 
 public class TestConnetion {
 
