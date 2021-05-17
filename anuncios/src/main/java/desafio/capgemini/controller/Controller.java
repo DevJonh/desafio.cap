@@ -24,7 +24,7 @@ public class Controller {
 		Anuncios anuncio = new Anuncios();
 		Boolean condition = true;
 
-		String nameAnuncio = JOptionPane.showInputDialog("Qual o nome do An�ncio? ");
+		String nameAnuncio = JOptionPane.showInputDialog("Qual o nome do Anúncio? ");
 		anuncio.setNameAnuncio(nameAnuncio);
 		String cliente = JOptionPane.showInputDialog("Qual o nome do Cliente? ");
 		anuncio.setCliente(cliente);
@@ -34,18 +34,18 @@ public class Controller {
 				anuncio.setInvestimentoDia(Double.parseDouble(invet));
 				condition = false;
 			} else {
-				JOptionPane.showMessageDialog(null, "Insira apenas n�meros");
+				JOptionPane.showMessageDialog(null, "Insira apenas números");
 			}
 		}
 
-		String inicio = JOptionPane.showInputDialog("Quando ir� iniciar o an�ncio? ");
+		String inicio = JOptionPane.showInputDialog("Quando irá iniciar o anúncio? ");
 	
 		DateTimeFormatter inicioFormater = DateTimeFormatter.ofPattern("dd/MM/uuuu")
 				.withResolverStyle(ResolverStyle.STRICT);
 		LocalDate inicioModify = LocalDate.parse(inicio, inicioFormater);
 		anuncio.setInicio(inicioModify);
 
-		String termino = JOptionPane.showInputDialog("Quando ir� finalizar o an�ncio? ");
+		String termino = JOptionPane.showInputDialog("Quando irá finalizar o anúncio? ");
 		
 		DateTimeFormatter fimFormater = DateTimeFormatter.ofPattern("dd/MM/uuuu")
 				.withResolverStyle(ResolverStyle.STRICT);
