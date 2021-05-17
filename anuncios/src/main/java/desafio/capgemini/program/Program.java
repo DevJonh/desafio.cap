@@ -6,7 +6,9 @@ public class Program {
 
 	
 	public static void main(String[] args) {		
-		new Layout().setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+		Layout layout = new Layout();
+		
+		layout.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 	}
 
 }

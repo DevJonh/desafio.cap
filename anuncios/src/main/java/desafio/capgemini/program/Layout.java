@@ -8,7 +8,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
 import desafio.capgemini.model.Anuncios;
 
 @SuppressWarnings("serial")
@@ -22,7 +21,6 @@ public class Layout extends JFrame {
 	private JButton relatorios = new JButton("Gerar Relatório");
 
 	public Layout() {
-		super();
 		this.setSize(600, 500);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
