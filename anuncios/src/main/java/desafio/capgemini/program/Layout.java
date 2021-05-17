@@ -8,7 +8,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import desafio.capgemini.model.Anuncios;
+
+import desafio.capgemini.controller.Controller;
 
 @SuppressWarnings("serial")
 public class Layout extends JFrame {
@@ -44,9 +45,9 @@ public class Layout extends JFrame {
 		cadastrar.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				Anuncios anuncio = new Anuncios();
+				Controller control = new Controller();
 
-				Boolean status = anuncio.Cadastrar();
+				Boolean status = control.Cadastrar();
 
 				if (status) {
 					JOptionPane.showMessageDialog(null, "Anuncio Cadastrado com Sucesso", "Sucesso",
@@ -60,12 +61,12 @@ public class Layout extends JFrame {
 
 			public void actionPerformed(ActionEvent e) {
 
-				Anuncios anuncio = new Anuncios();
+				Controller control = new Controller();
 
 				Boolean condition = true;
 
 				while (condition) {
-					Boolean isSaved = anuncio.Cadastrar();
+					Boolean isSaved = control.Cadastrar();
 
 					if (isSaved) {
 						JOptionPane.showMessageDialog(rootPane, "Anúncio Cadastrado com Sucesso!");
@@ -86,12 +87,12 @@ public class Layout extends JFrame {
 		delete.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				Anuncios anuncio = new Anuncios();
+				Controller control = new Controller();
 				Boolean condition = true;
 
 				while (condition) {
 					String id = JOptionPane.showInputDialog("Qual o Código do Anuncio ?");
-					Boolean isDeleted = anuncio.Deletar(Long.parseLong(id));
+					Boolean isDeleted = control.Deletar(Long.parseLong(id));
 
 					if (isDeleted) {
 						JOptionPane.showMessageDialog(rootPane, "Anúncio Excluido com Sucesso!");
@@ -119,11 +120,11 @@ public class Layout extends JFrame {
 
 			public void actionPerformed(ActionEvent e) {
 				
-				Anuncios anuncio = new Anuncios();
+				Controller control = new Controller();
 				
 				String id = JOptionPane.showInputDialog("Qual o código do Anúncio");
 				
-				Boolean isSucess = anuncio.gerarRelatorio(Long.parseLong(id));
+				Boolean isSucess = control.gerarRelatorio(Long.parseLong(id));
 				
 				if(isSucess) {
 					JOptionPane.showMessageDialog(null, "Anúncio gerado com sucesso em C:\\relatorios");
